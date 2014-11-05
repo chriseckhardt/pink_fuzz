@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Pink Fuzz",
+  "version": "0.0.1",
+  "description": "Replaces '#gamersgate' with a euphamism.",
+  "content_scripts":
+  [
+    {
+      "matches": ["*://*/*"],
+      "js": ["pink_fuzz.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
